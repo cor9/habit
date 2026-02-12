@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Habit Checkmarks</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Habit Tracker</h1>
+    <p class="sub">Simple checkmarks only (max 15 habits)</p>
+
+    <form id="habit-form" class="add-habit">
+      <input
+        id="habit-input"
+        type="text"
+        maxlength="40"
+        placeholder="Add a habit"
+        autocomplete="off"
+        required
+      />
+      <button type="submit">Add</button>
+    </form>
+
+    <p id="count" class="count"></p>
+    <ul id="habit-list" class="habit-list"></ul>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
